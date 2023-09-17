@@ -1,0 +1,321 @@
+html {
+  height: 100%;
+  background-color: #F9E0BB;
+}
+
+body {
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F9E0BB;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 50px 20px 15px;
+  text-decoration: none;
+  text-decoration-thickness: 50%;
+  font-size: 18px;
+}
+
+li a:hover {
+  background-color: #ffc670;
+  color: white;
+}
+
+.footer {
+  position: block;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: #884A39;
+  color: black;
+  text-align: center;
+}
+
+button {
+  border: none;
+  border-radius: 16px;
+  color: black;
+  padding: 20px 4%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 15px;
+  cursor: pointer;
+  transition-duration: 0.2s
+}
+
+.button1 {
+  background-color: #FFC26F;
+}
+
+.button1:hover {
+  background-color: #F9E0BB;
+  border: 3px solid #FFC26F
+}
+
+.blow {
+  background-color: white;
+  color: black;
+  padding: 50px;
+  margin: 20px;
+  border: solid black;
+  display: block;
+}
+
+.blowphoto {
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+}
+
+
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  background: #C38154;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.page-header,
+.main-header {
+  background-color: #884A39;
+  color: white;
+  padding: 15px 15px 15px 30px;
+  font-size: 16px;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 600px;
+  width: auto;
+  padding: 16px;
+  color: grey;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 20px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: white;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.img-2 {
+  width: 450px;
+  height: auto;
+  display: inline-block;
+}
+
+.img-3 {
+  width: 250px;
+  height: auto;
+  display: inline-block;
+}
+
+.img-5 {
+  width: 250px;
+  height: 300px;
+  display: inline-block;
+}
+
+.img-6 {
+  width: 450px;
+  height: 400px;
+  display: inline-block;
+}
+
+.img-7 {
+  width: 350px;
+  height: 450px;
+  display: inline-block;
+}
+
+.img-8{
+  width: 350px;
+  height: auto;
+  display: inline-block;
+}
+
+.img-logo {
+  margin-left: 15px;
+  margin-top: 5px;
+  width: 80px;
+  height: 75px;
+}
+
+.img-recruit {
+  margin-left: 40px;
+  margin-right: 20px;
+  width: 50%;
+  height: auto;
+}
+
+.img-4 {
+  width: 600px;
+  height: auto;
+  display: inline-block;
+}
+
+.fb-frame {
+  border: none;
+  overflow: hidden;
+  width: 500px;
+  height: 650px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: yellow;
+}
+
+@media (max-width: 600px) {
+  .img-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-3 {
+    width: 100%;
+    height: auto;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 10px 5px;
+    text-decoration: none;
+    text-decoration-thickness: 50%;
+    font-size: 12px;
+  }
+
+  .img-logo {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 50px;
+    height: auto;
+  }
+
+  .img-recruit {
+    width: 85%;
+    height: auto;
+  }
+
+  .fb-frame {
+    border: none;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+  }
+
+  .page-header,
+  .main-header {
+    background-color: #884A39;
+    color: white;
+    padding: 5px 5px 5px 15px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .footer {
+    position: block;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: #884A39;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  button {
+    border: none;
+    border-radius: 16px;
+    color: black;
+    padding: 10px 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 5px 10px 0px;
+    cursor: pointer;
+    transition-duration: 0.2s
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    width: auto;
+    padding: 16px;
+    color: grey;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+}
