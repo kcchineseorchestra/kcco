@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>坤成中学华乐团</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .column {
+      flex: 50%;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <img src="logo.png" class="img-logo">
+    <li><a href="成就.html">成就</a></li>
+    <li><a href="活动.html">活动</a></li>
+    <li><a href="乐器.html">乐器</a></li>
+    <li><a href="组织架构.html">组织架构</a></li>
+    <li><a href="历史.html">历史</a></li>
+    <li><a href="index.html">主页</a></li>
+  </ul>
+
+  <div class="main-header">
+    <h1>吉隆坡坤成中学华乐团</h1>
+  </div>
+
+  <div>
+    <img class="mySlides" src="1.jpg" style="width:100%">
+    <img class="mySlides" src="2.jpg" style="width:100%">
+    <img class="mySlides" src="3.jpg" style="width:100%">
+    <img class="mySlides" src="4.jpg" style="width:100%">
+    <a class="prev" onclick="showSlide(false)">&#10092;</a>
+    <a class="next" onclick="showSlide(true)">&#10093;</a>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+  <br> <p style="margin-left:40px; margin-right:15px; font-size:27px; font-weight:bold">2023年招生海报~ </p> 
+  <div>
+    <div class="row">
+      <div class="column">
+        <a target="_blank" href="招生.jpg">
+        <img src="招生.jpg" style="margin-left:40px; width:100%"></a>
+      </div>
+      <div class="column">
+        <iframe
+      src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/welovekcco&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+          style="height:800px; width:100%; margin-left:15px;" class="fb-frame" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+    
+   
+  <br>
+  <br>
+  <p style="margin-left:40px; margin-right:15px; font-size:27px; font-weight:bold">2022年社团回顾影片~ </p>
+  <video style="margin-left:40px" width="60%" height="40%" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <br>
+  <br>
+  <br>
+
+  <button onclick="scrollToTop()" id="scrollToTop" title="Go to top">Top</button>
+
+  <div class="footer">
+    <p style="font-size:15px; text:black"><br>Kuen Cheng Chinese Orchestra<br>
+      Jalan Syed Putra, 50460 Kuala Lumpur, Malaysia<br>
+      <a href="mailto:kcco@kuencheng.edu.my" style="text:black">Email: kcco@kuencheng.edu.my</a><br>
+      012-3456789<br>
+      <a href="https://www.facebook.com/welovekcco"><i class="fa-brands fa-facebook fa-xl" style="color:black;"></i></a>
+      <a href="https://www.instagram.com/kcchineseorchestra/"><i class="fa-brands fa-instagram fa-xl"
+          style="color:black;"></i></a>
+      <a href="https://youtube.com/@kuenchenghighschool9472?si=xvWMo9knqqINKA7P"><i class="fa-brands fa-youtube fa-xl"
+          style="color:black;"></i></a><br>
+      Copyright © 2023 坤成中学华乐团
+    </p>
+    <p>&NonBreakingSpace;</p>
+  </div>
+  <script src="https://kit.fontawesome.com/a1bda61352.js" crossorigin="anonymous"></script>
+
+  <script>
+    var myIndex = 0;
+    var myTimeout;
+    showSlidesAuto();
+
+    function showSlidesAuto() {
+      myIndex++;
+      carousel();
+      myTimeout = setTimeout(showSlidesAuto, 3000);
+    }
+
+    function showSlide(nextFlag) {
+      if (myTimeout) {
+        clearTimeout(myTimeout);
+      }
+      if (nextFlag) {
+        myIndex++;
+      } else {
+        myIndex--;
+      }
+      carousel();
+    }
+
+    function currentSlide(idx) {
+      if (myTimeout) {
+        clearTimeout(myTimeout);
+      }
+      myIndex = idx;
+      carousel();
+    }
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var z = document.getElementsByClassName("dot");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        z[i].className = z[i].className.replace(" active", "");
+      }
+      if (myIndex > x.length) {
+        myIndex = 1;
+      } else if (myIndex <= 0) {
+        myIndex = 4;
+      }
+      x[myIndex - 1].style.display = "block";
+      z[myIndex - 1].className += " active";
+    }
+  </script>
+
+</body>
+
+</html>
