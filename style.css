@@ -203,8 +203,9 @@ button {
 .img-recruit {
   margin-left: 40px;
   margin-right: 20px;
-  width: 50%;
+  width: 90%;
   height: auto;
+  display: block;
 }
 
 .img-4 {
