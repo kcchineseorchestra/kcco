@@ -200,25 +200,10 @@ button {
   height: 75px;
 }
 
-.img-recruit {
-  margin-left: 40px;
-  margin-right: 20px;
-  width: 90%;
-  height: auto;
-  display: block;
-}
-
 .img-4 {
   width: 600px;
   height: auto;
   display: inline-block;
-}
-
-.fb-frame {
-  border: none;
-  overflow: hidden;
-  width: 600px;
-  height: 780px;
 }
 
 a {
@@ -256,18 +241,6 @@ a:hover {
     margin-top: 5px;
     width: 50px;
     height: auto;
-  }
-
-  .img-recruit {
-    width: 85%;
-    height: auto;
-  }
-
-  .fb-frame {
-    border: none;
-    overflow: hidden;
-    width: 100%;
-    height: 500px;
   }
 
   .page-header,
